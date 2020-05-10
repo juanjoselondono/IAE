@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     font-family: 'Nunito', sans-serif;
     color: white;
@@ -30,66 +32,47 @@ body {
 }
 
 
-/*Aqui info principal*/
+/*Aqui sección principal*/
+
+.principal_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
 
 .info_principal {
+    align-self: center;
     color: black;
+    width: 30%;
+    height: 100%;
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
 }
 
 .info_principal p {
-    margin-left: 20px;
-    margin-right: 20px;
+    font-size: 30px;
+}
+
+.info_principal h2 {
+    font-size: 30px;
 }
 
 
 /*Aqui empienza el scroll de la sección de imagenes*/
 
 .slider {
-    width: 700px;
+    display: flex;
+    width: 70%;
     height: auto;
 }
 
 .slider img {
-    width: 700px;
-}
-
-.slider ul {
-    list-style: none;
-    width: 2800px;
-    display: flex;
-    animation: slide 20s infinite alternate;
-}
-
-@keyframes slide {
-    0% {
-        margin-left: 0px;
-    }
-    20% {
-        margin-left: 0px;
-    }
-    25% {
-        margin-left: -700px;
-    }
-    45% {
-        margin-left: -700px;
-    }
-    50% {
-        margin-left: -1400px;
-    }
-    70% {
-        margin-left: -1400px;
-    }
-    75% {
-        margin-left: -2100px;
-    }
-    100% {
-        margin-left: -2100px
-    }
+    align-self: flex-start;
+    width: auto;
+    height: auto;
 }
 
 
@@ -98,6 +81,8 @@ body {
 .footer {
     background-color: black;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100px;
@@ -106,12 +91,13 @@ body {
 .footer a {
     text-decoration: none;
     color: white;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .footer h7 {
-    margin-left: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 
