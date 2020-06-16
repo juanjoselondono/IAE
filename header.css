@@ -7,7 +7,7 @@ body{
     margin: 0px 0px 0px;
     font-family: 'Nunito', sans-serif;
     display: grid;
-    grid-template-rows: 0.5fr 2.8fr 4fr 0.5fr;
+    grid-template-rows: 0.5fr 2.8fr 4fr 5fr 0.5fr;
     grid-template-columns: 1fr;
     grid-row-gap: 1fr;
 }
@@ -51,7 +51,7 @@ body{
     display: flex;
 }
 .section_image_planta{
-    width: 490px;
+    width: 90%;
     height: auto;
     margin-left: 2%;
     align-self: center;
@@ -71,7 +71,7 @@ body{
     height: 80%;
     align-self: center;
     justify-self: center;
-    background-color: #E4DFDA;
+    background-color: rgb(248, 245, 241);
     display: grid;
     grid-template: 1fr/repeat(3,0.9fr);
     grid-gap: 30px 30px;
@@ -86,17 +86,18 @@ body{
     outline:solid 1px #E4DFDA ;
 }
 .tarjet_item:hover{
+    transition-delay: 0.1s;
     transform: translateY(-25px);
     cursor: pointer;
     outline: solid 2px  rgb(170, 168, 166) ;
 }
 .tarjet_item_title{
     align-self: center;
-    color: rgb(131, 130, 128);
+    color: rgb(133, 131, 131)
 }
 .tarjet_item_image{
     font-size: large;
-    width: 300px;
+    width: 80%;
     height: auto;
     align-self: center;
 }
@@ -105,6 +106,54 @@ body{
     text-align: left;
     margin: 2% 6% 0% 6%;
 }
+/*Objetivo Misión Visión*/
+.section2_container{
+    background-color: rgb(218, 255, 97);
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr;
+}
+.section2_2container{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+}
+.section2_container_objective{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    background-image: url(./images/botanica.jpg);
+    background-position-y: center;
+    background-position-x: right;
+}
+.section2_2container_vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:url(./images/blueprint.jpg) ;
+    background-position-y:center;
+    background-position-x: left;
+}
+.section2_2container_mision{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:url(./images/palma.jpg) ;
+    background-position-y:center;
+    background-position-x:right;
+}
+.section2_container_title{
+    justify-self: center;
+    align-self: center;
+    font-size: 40px;
+}
+.section2_container_text{
+    justify-self: center;
+    align-self: center;
+}
 /*footer*/
 .footer_container{
     background-color: black;
@@ -112,4 +161,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.footer_link{
+    text-decoration: none;
+    color: white;
 }
