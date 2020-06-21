@@ -1,0 +1,57 @@
+body {
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 2.8fr 0.5fr;
+    grid-template-columns: 1fr;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+/*Menu*/
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.menu_container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+.menu_img{
+    width: 50px;
+    height: auto;
+    align-self: center;
+}
+.menu_title{
+    align-self: center;
+    font-style: italic;
+}
+.menu_items_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+.menu_items:hover{
+    border: solid white 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*tarjet people*/
+.tarjet_people{
+    background-color: chartreuse;
+}
+/*Footer*/
+.footer_container{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer_link{
+    text-decoration: none;
+    color: white;
+}

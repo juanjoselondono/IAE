@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,36 +9,45 @@
 </head>
 
 <body>
-    <header class="menu">
-        <div class="elements_menu">
-            <img src="images/Logo.jpg" alt="Logo_ IAE " class="logo_menu" />
-            <h1>INGENIERÍA AMBIENTAL ESPECIALIZADA</h1>
-            <p>Proyectos</p>
-            <p class="elements_menu_selected">Contacto</p>
-            <p>Acerca de nosotros</p>
-            <p>Servicios</p>
-
-        </div>
+    <header class ="menu_container">
+        <h1 class = "menu_title"><a href="./header_iae.html"><img class = "menu_img" src="./images/Logo4.png">INGENIERIA AMBIENTAL ESPECIALIZADA </a></h1>
+        <ul class = "menu_items_container">
+            <li class ="menu_items"><a href="./contacto.html">Contacto</a></li>
+            <li class ="menu_items"><a href="./projects.html">Projectos</a></li>
+            <li class ="menu_items"><a href="./servicios.html">Servicios</a></li>
+            <li class ="menu_items"><a href="./aboutus.html">Acerca de nosotros</a></li>
+        </ul>
     </header>
-    <section class="meeting">
+    <section class="formulario_container">
         <div class="formulario">
-            <h2>Solicitar cita</h2>
-            <p>Email de contacto <input type="email" /></p>
-            <p>Ingresa el motivo <input type="text"></p>
-            <p>Ingresa nombre <input type="text"></p>
-            <p>Ingresa apellido <input type="text"></p>
-            <input type="button" value="Enviar" />
-        </div>
-        <div class="social_media_container">
-            <a href="https://www.instagram.com/ing.ambientalespecializada/" target="_blank">Instagram <img src="images/icons/instagram.png" /></a>
-            <p>Whatsapp <img src="images/icons/whatsapp.png" /> +57 3158321047</p>
+            <h2 class="formulario_title">Solicitar cita</h2>
+            <div class="formulario_item" id = "formulario_email">
+                <p>Email de contacto</p><input type="email" class="formulario_item_input"/>
+            </div>
+            <div class="formulario_item" id = "formulario_motivo">
+                <p>Ingresa el motivo </p><input type="text" class="formulario_item_input">
+            </div>
+            <div class="formulario_item" id="formulario_nombre">
+                <p>Ingresa nombre </p><input type="text" class="formulario_item_input">
+            </div>
+            <div class = "formulario_item" id="formulario_text">
+                <p>Ingresa el contenido</p>
+                <input type="email" class="formulario_item_input" id = "formulario_item_input_text" >
+            </div>
+            <input class="formulario_item_send"type="button" value="Enviar" />
         </div>
     </section>
     <section class="maps_container">
-        <p>Ubicación Dg. 52 #12-244</p>
+        <p class="maps_text">Ubicación Dg. 52 #12-244</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3722009986186!2d-75.52517858570356!3d6.345824126965017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4425617f9a7b5d%3A0x1ee829d6c66dd83a!2sDg.%2052%20%2312-244%2C%20Bello%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1589137109177!5m2!1ses-419!2sco"
             width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
+    <footer class="footer_container">
+        <a class="footer_link" href="https://www.instagram.com/ing.ambientalespecializada/?hl=es-la"><p><img src="./images/icons/instagram.png"> Instagram</p></a>
+        <p><img src="./images/icons/whatsapp.png"> +51 3158321047</p>
+        <p> ambientaldavid@yahoo.com </p>
+        <p>© 2020 IAE</p>
+    </footer>
 </body>
 
 </html>
