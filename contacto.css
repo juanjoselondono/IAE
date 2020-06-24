@@ -1,7 +1,12 @@
+html{
+    width: 100%;
+    height: 100%;
+}
 body {
+    width: 100%;
     grid-template-rows: 0.5fr 2.8fr 2fr 0.5fr;
     grid-template-columns: 1fr;
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
     font-family: 'Nunito', sans-serif;
     color: white;
 }
@@ -77,13 +82,13 @@ a{
 #formulario_item_input_text{
     text-align-last: unset;
     text-align: left;
-    height:200px;
-    width: 400px;
+    height:10vh;
+    width: 50vh;
     justify-self: center;
     align-self: center;
 }
 .formulario_item_send{
-    outline:solid black;
+    outline: none;
     border:solid red;
     border-radius: 25px;
     margin-top:1%;
@@ -93,6 +98,11 @@ a{
     justify-self: center;
     background-color:red;
     font-size: large;
+}
+.formulario_item_send:active{
+    outline: none;
+    background-color:rgb(255, 163, 163);
+    border: solid rgb(255, 163, 163);
 }
 /*Mapas de google*/
 .maps_container{
@@ -117,4 +127,44 @@ a{
 .footer_link{
     text-decoration: none;
     color: white;
+}
+/*Phone*/
+@media only screen and (max-width: 600px) {
+    /*Body*/
+    body{
+        grid-template-rows: 0.5fr 2.8fr 1fr 4fr 0.5fr;
+    }
+    /*Header*/
+    .menu_title{
+        align-self: center;
+        font-style: normal;
+        text-align: center;
+    }
+    .menu_items_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        padding-left: 0px;
+    }
+    .menu_img{
+        display: none;
+    }
+    /*formulario*/
+    #formulario_item_input_text{
+        text-align-last: unset;
+        text-align: left;
+        height:10vh;
+        width: 15vh;
+        justify-self: center;
+        align-self: center;
+    }
+    /*footer*/
+    .footer_container{
+        display: flex;
+        flex-direction:column;
+    }
+    .footer_link{
+        align-self: center;
+    }
 }
