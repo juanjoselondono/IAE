@@ -6,16 +6,23 @@ var contenido = document.getElementById("formulario_content_input");
 function sending(){
     email = email.value;
     motivo = motivo.value; 
-    if(email == "" && motivo == ""){
+    contenido = contenido.value;
+    if(email == "" && motivo == "" && contenido == ""){
         swal({
             icon: "error",
             text: "Ingrese parámetros validos"
           });
     }
-    else{
+    else if (email != "" && motivo != "" && contenido != ""){
         swal({
             icon: "success",
             text: "Solicitud Enviada"
+          });
+    }
+    else{
+        swal({
+            icon: "error",
+            text: "Ingrese parámetros validos"
           });
     }
     email = document.getElementById("formulario_email_input");

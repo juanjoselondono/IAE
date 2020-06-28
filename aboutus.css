@@ -52,6 +52,7 @@ a{
     align-self: center;
 } 
 .animated {
+    animation-delay: 1s;
     animation-fill-mode: both;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
@@ -160,7 +161,7 @@ a{
 @media only screen and (max-width: 800px) {
     /*Body*/
     body{
-        grid-template-rows:0.5fr 2fr 4fr 1fr ;
+        grid-template-rows:0.5fr 1fr 4fr 1fr ;
     }
     /*Header*/
     .menu_title{
@@ -179,8 +180,16 @@ a{
         display: none;
     }
     /**/
+    .presentation_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        background-image: url(./images/view_plant.jpg);
+        background-position: center;
+    }
     .text{
-        align-content: center;
+        margin-left: 30px;
         align-self: center;
         justify-self: center;
     } 
@@ -189,6 +198,7 @@ a{
         animation-duration: 1.5s;
         animation-iteration-count: 1;
     /*Sec*/
+    }
     .tarjet_people_container{
         display: none;
     }

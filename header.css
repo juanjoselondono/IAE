@@ -60,8 +60,8 @@ a{
 }
 .section1_slider_myslides{
     align-self: center;
-    width: 90vh;
-    height: 60vh;
+    width: 90%;
+    height: 70%;
 }
 /*Section 2*/
 .section_work_subjects{
@@ -134,9 +134,9 @@ a{
     display: flex;
     flex-direction: column;
     font-size: large;
-    background-image: url(./images/botanica.jpg);
-    background-position-y: center;
-    background-position-x: right;
+    background-image: url(./images/whitePlants.jpg);
+    background-position-y: 150;
+    background-position-x: center;
 }
 .section2_2container_vision{
     display: flex;
@@ -208,6 +208,11 @@ a{
         align-self: center;
     }
     /*section2*/
+    .section1_slider_myslides{
+        align-self: center;
+        width: 90vh;
+        height: 60vh;
+    }
     .section2_container{
         margin: 0px 0px 0px 0px;
         background-color: white;

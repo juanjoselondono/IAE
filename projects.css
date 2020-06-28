@@ -125,7 +125,7 @@ animation: slidein 7s infinite;
 @media only screen and (max-width: 600px) {
     /*Body*/
     body{
-        grid-template-rows: 0.5fr 2.8fr 1fr 4fr 0.5fr;
+        grid-template-rows: 0.5fr 9fr 0.5fr;
     }
     /*Header*/
     .menu_title{
@@ -158,6 +158,9 @@ animation: slidein 7s infinite;
         align-self: center;
     }
     /*section2*/
+    .projects_presentation{
+        display: none;
+    }
     .tarjet_item_text{
         display: none;
     }
