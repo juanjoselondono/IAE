@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="Ingeniería Ambiental Especializada" />
+<meta property="og:description"        content="IAE es una empresa Colombiana con sede en Bello, Antioquia..." />
+<meta property="og:image"              content="https://images.pexels.com/photos/257700/pexels-photo-257700.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
     <link rel="stylesheet" type="text/css" href="header.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="./images/icons/favicon.ico" rel="icon">
     <title>IAE</title>
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/LocalBusiness">
     <header class ="menu_container">
-        <h1 class = "menu_title"><a href="./header_iae.html"><img class = "menu_img" src="./images/Logo4.png">INGENIERIA AMBIENTAL ESPECIALIZADA </a></h1>
+        <img class = "menu_img" src="./images/Logo4.png" itemprop="logo"><h1 class = "menu_title" itemprop="name"><a href="./header_iae.html" itemprop="url">INGENIERIA AMBIENTAL ESPECIALIZADA </a></h1>
         <ul class = "menu_items_container">
             <li class ="menu_items"><a href="./contacto.html">Contacto</a></li>
-            <li class ="menu_items"><a href="./projects.html">Projectos</a></li>
+            <li class ="menu_items"><a href="./projects.html">Proyectos</a></li>
             <li class ="menu_items"><a href="./servicios.html">Servicios</a></li>
             <li class ="menu_items"><a href="./aboutus.html">Acerca de nosotros</a></li>
         </ul>
     </header>
     <section class="section_container">
         <div class="section1_slider">
-            <img class="section1_slider_myslides" src="./images/1Tratamiento.jpeg" alt="">
-            <img class="section1_slider_myslides" src="./images/building_planta.jpeg" alt="">
-            <img class="section1_slider_myslides" src="./images/planta_verde.jpeg" alt="">
+            <img class="section1_slider_myslides" itemprop="image" src="./images/tanque_verdes_azules.jpeg" alt="image plant">
+            <img class="section1_slider_myslides" src="./images/tanque_grande_ingeniero.jpeg" alt="image engineer on the plant">
+            <img class="section1_slider_myslides" src="./images/planta_verde.jpeg" alt="Llanogrande plant">
         </div>
         <p class ="section_text">IAE es una empresa Colombiana con sede en Bello, Antioquia; Especializada en el <strong>diseño y construcción de sistemas de tratamiento de aguas residuables y agua potable, trámites, autorización de permisos ambientales, planes de manejo ambiental, estudios hidrológicos y planes parciales</strong>. Con más de 20 años de experiencia, Siempre hemos estado comprometidos con el medio ambiente y los resultados de alta calidad</p>
     </section>
@@ -65,8 +70,8 @@
     </section>
     <footer class="footer_container">
         <a class="footer_link" href="https://www.instagram.com/ing.ambientalespecializada/?hl=es-la"><p><img src="./images/icons/instagram.png"> Instagram</p></a>
-        <p class="footer_link"><img src="./images/icons/whatsapp.png"> +51 3158321047</p>
-        <p class="footer_link"> ambientaldavid@yahoo.com </p>
+        <p class="footer_link" itemprop="telephone"><img src="./images/icons/whatsapp.png"> +51 3158321047</p>
+        <p class="footer_link" itemprop="email"> ambientaldavid@yahoo.com </p>
         <p class="footer_link">© 2020 IAE</p>
     </footer>
     <script src="index.js"></script>
