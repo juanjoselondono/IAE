@@ -33,14 +33,11 @@
             <div class="formulario_item" id = "formulario_motivo">
                 <p>Ingresa el motivo </p><input type="text" class="formulario_item_input" id ="formulario_motivo_input">
             </div>
-            <div class="formulario_item" id="formulario_nombre">
-                <p>Ingresa nombre </p><input type="text" class="formulario_item_input" id = "formulario_nombre_input">
-            </div>
             <div class = "formulario_item" id="formulario_text">
                 <p>Ingresa el contenido</p>
                 <input type="email" class="formulario_item_input" id ="formulario_content_input" >
             </div>
-            <button class="formulario_item_send"type="button" id="sendMessage" onclick="sending()">Enviar</button>
+            <button class="formulario_item_send"type="button" id="button_message" onclick="send()">Enviar</button>
         </div>
     </section>
     <footer class="footer_container">
@@ -49,8 +46,29 @@
         <p class="footer_link"> ambientaldavid@yahoo.com </p>
         <p class="footer_link">© 2020 IAE</p>
     </footer>
-    <script src="./contacto.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+        function send(){
+            var email = document.getElementById("formulario_email_input").value;
+            var motivo = document.getElementById("formulario_motivo_input").value;
+            var contenido = document.getElementById("formulario_content_input").value;
+
+            Email.send({
+            SecureToken : "6c0e2dda-693c-4140-926b-0fcfc5177c4d",
+            To : 'ingenieriaambientalemails@gmail.com',
+            From : "ingenieriaambientalemails@gmail.com",
+            Subject : motivo,
+            Body : `email: ${email} ... ${contenido}`
+            }).then(
+            message => alert(message)
+            );
+            
+            var email = document.getElementById("formulario_email_input");
+            var motivo = document.getElementById("formulario_motivo_input");
+            var contenido = document.getElementById("formulario_content_input");
+        }
+    </script>
 </body>
 
 </html>
