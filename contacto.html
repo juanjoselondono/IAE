@@ -47,23 +47,33 @@
         <p class="footer_link">© 2020 IAE</p>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script>
 
         function send(){
             var email = document.getElementById("formulario_email_input").value;
             var motivo = document.getElementById("formulario_motivo_input").value;
             var contenido = document.getElementById("formulario_content_input").value;
-
-            Email.send({
-            SecureToken : "6c0e2dda-693c-4140-926b-0fcfc5177c4d",
-            To : 'ingenieriaambientalemails@gmail.com',
-            From : "ingenieriaambientalemails@gmail.com",
-            Subject : motivo,
-            Body : `email: ${email} ... ${contenido}`
-            }).then(
-            message => alert(message)
-            );
             
+            if(email != "" && motivo != "" && contenido != ""){
+                Email.send({
+                SecureToken : "6c0e2dda-693c-4140-926b-0fcfc5177c4d",
+                To : 'ingenieriaambientalemails@gmail.com',
+                From : "ingenieriaambientalemails@gmail.com",
+                Subject : motivo,
+                Body : `email: ${email} ... ${contenido}`
+                }).then(
+                message => alert(message)
+                );
+            }
+            else{
+                Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Faltan carácteres!',
+                footer: '<a href>Why do I have this issue?</a>'
+                })
+            }
             var email = document.getElementById("formulario_email_input");
             var motivo = document.getElementById("formulario_motivo_input");
             var contenido = document.getElementById("formulario_content_input");
