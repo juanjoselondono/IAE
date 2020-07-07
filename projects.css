@@ -102,12 +102,25 @@ animation: slidein 7s infinite;
 /* Slideshow container */
 .projects_carousel_container{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr;
 }
 .projects_carousel_item{
-    background-color: blue;
-    border: solid black 2px;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 2fr;
+}
+.projects_carousel_item_image{
+    align-self: center;
+    justify-self: center;
+    width: 60%;
+    height: 100%;
+}
+.projects_carousel_item_title{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 50px;
 }
 /*footer*/
 .footer_container{
@@ -140,9 +153,6 @@ animation: slidein 7s infinite;
         list-style: none;
         padding-left: 0px;
     }
-    .menu_img{
-        display: none;
-    }
     /*Section*/
     .section_container{
         grid-template-columns: 1fr;
@@ -163,6 +173,18 @@ animation: slidein 7s infinite;
     }
     .tarjet_item_text{
         display: none;
+    }
+    /*items*/
+    .projects_carousel_item{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 2fr;
+        outline: black 2px;
+    }
+    .projects_carousel_item_title{
+        align-self: center;
+        justify-self: center;
+        font-size: 10px;
     }
     /*Footer*/
     .footer_container{

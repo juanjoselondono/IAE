@@ -9,7 +9,7 @@ body{
     margin: 0px 0px 0px;
     font-family: 'Nunito', sans-serif;
     display: grid;
-    grid-template-rows: 0.5fr 2.8fr 4fr 5fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 3fr 4.2fr 0.25fr;
     grid-template-columns: 1fr;
     grid-row-gap: 1fr;
 }
@@ -53,6 +53,7 @@ a{
 .section_text{
     font-size: 25px;
     align-self: center;
+    margin-left: 5%;
 }
 .section1_slider{
     display: flex;
@@ -75,7 +76,7 @@ a{
 }
 .tarjet{
     width: 100%;
-    height: 80%;
+    height: 70%;
     align-self: center;
     justify-self: center;
     background-color: rgb(248, 245, 241);
@@ -97,8 +98,7 @@ a{
 .tarjet_item:hover{
     transition-delay: 0.1s;
     transform: translateY(-25px);
-    cursor: pointer;
-    outline: solid 2px  rgb(170, 168, 166) ;
+    box-shadow: 5px 10px 18px rgb(156, 156, 180);
 }
 .tarjet_item_title{
     align-self: center;
@@ -107,7 +107,7 @@ a{
 .tarjet_item_image{
     font-size: large;
     width: 80%;
-    height: auto;
+    height: 50%;
     align-self: center;
 }
 .tarjet_item_text{
@@ -125,42 +125,30 @@ a{
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 3fr;
 }
-.section2_2container{
-    display:grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr;
-}
-.section2_container_objective{
+.section2_container_vision{
     display: flex;
     flex-direction: column;
-    font-size: large;
-    background-image: url(./images/whitePlants.jpg);
-    background-position-y: 150;
-    background-position-x: center;
+    background-image: url(./images/clouds.jpg);
+    background-position:center;
 }
-.section2_2container_vision{
+.section2_container_mision{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-image:url(./images/blueprint.jpg) ;
-    background-position-y:center;
-    background-position-x: left;
-}
-.section2_2container_mision{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image:url(./images/palma.jpg) ;
+    background-image:url(./images/rain.jpg);
     background-position-y:center;
     background-position-x:right;
 }
 .section2_container_title{
     align-self: center;
-    font-size: 40px;
+    opacity: 1;
+    font-size: 30px;
 }
 .section2_container_text{
-    justify-self: center;
-    align-self: center;
+    font-size:25px;
+    opacity: 1;
+    margin: 0px 20% 5% 20%;
+    align-self: flex-start;
+    text-align: left;
 }                   
 /*footer*/
 .footer_container{
@@ -178,7 +166,7 @@ a{
 @media only screen and (max-width: 800px) {
     /*Body*/
     body{
-        grid-template-rows: 0.25fr 1fr 0.8fr 2fr 0.3fr;
+        grid-template-rows: 0.25fr 1fr 2fr 1.5fr 0.25fr;
     }
     /*Header*/
     .menu_title{
@@ -193,25 +181,23 @@ a{
         list-style: none;
         padding-left: 0px;
     }
-    .menu_img{
-        display: none;
-    }
     /*Section*/
     .section_container{
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 0.5fr;
     }
     .section_text{
-        margin-left: 2%;
-        margin-right: 2%;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
         font-size: 25px;
         align-self: center;
     }
     /*section2*/
     .section1_slider_myslides{
         align-self: center;
-        width: 90vh;
-        height: 60vh;
+        width: 100%;
+        height: 40vh;
     }
     .section2_container{
         margin: 0px 0px 0px 0px;
@@ -219,6 +205,12 @@ a{
         display:grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.25fr 0.25fr;
+    }
+    /**/
+    .tarjet{
+        display: grid;
+        grid-template: repeat(3,0.9fr)/1fr;
+        grid-gap: 30px 30px;
     }
     /*Footer*/
     .footer_container{

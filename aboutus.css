@@ -99,7 +99,8 @@ a{
     align-self: center;
     color: black;
     font-size:25px;
-    text-align: center;
+    text-align: left;
+    margin: 0px 10% 0px 10%;
 }
 .history_bar{
     width: 80%;
@@ -176,9 +177,6 @@ a{
         list-style: none;
         padding-left: 0px;
     }
-    .menu_img{
-        display: none;
-    }
     /**/
     .presentation_page{
         display: flex;
@@ -189,7 +187,7 @@ a{
         background-position: center;
     }
     .text{
-        margin-left: 30px;
+        margin-left: 75px;
         align-self: center;
         justify-self: center;
     } 

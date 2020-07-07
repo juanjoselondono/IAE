@@ -147,9 +147,6 @@ a{
         list-style: none;
         padding-left: 0px;
     }
-    .menu_img{
-        display: none;
-    }
     /*formulario*/
     #formulario_item_input_text{
         text-align-last: unset;
