@@ -134,8 +134,8 @@ a{
 .section2_container_mision{
     display: flex;
     flex-direction: column;
-    background-image:url(./images/rain.jpg);
-    background-position-y:center;
+    background-image:url(./images/clouds.jpg);
+    background-position-y:bottom;
     background-position-x:right;
 }
 .section2_container_title{
@@ -179,6 +179,7 @@ a{
         flex-direction: row;
         justify-content: space-around;
         list-style: none;
+        font-size: 0.8em;
         padding-left: 0px;
     }
     /*Section*/
