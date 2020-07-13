@@ -118,7 +118,7 @@ a{
 }
 /*Objetivo Misión Visión*/
 .section2_container{
-    background-color: rgb(218, 255, 97);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgba(0,212,255,1) 52%);
     margin-top: 10%;
     margin-bottom: 5%;
     display:grid;
@@ -128,14 +128,12 @@ a{
 .section2_container_vision{
     display: flex;
     flex-direction: column;
-    background-image: url(./images/clouds.jpg);
     background-position:center;
 }
 .section2_container_mision{
     display: flex;
     flex-direction: column;
-    background-image:url(./images/clouds.jpg);
-    background-position-y:bottom;
+    background-position-y:center;
     background-position-x:right;
 }
 .section2_container_title{
