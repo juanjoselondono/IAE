@@ -117,6 +117,9 @@ animation: slidein 7s infinite;
     width: 60%;
     height: 100%;
 }
+.projects_carousel_item_image:hover{
+    opacity: 0.7;
+}
 .projects_carousel_item_title{
     align-self: center;
     justify-self: center;
@@ -186,7 +189,7 @@ animation: slidein 7s infinite;
     .projects_carousel_item_title{
         align-self: center;
         justify-self: center;
-        font-size: 10px;
+        font-size: 25px;
     }
     .projects_carousel_item_image{
         align-self: center;
