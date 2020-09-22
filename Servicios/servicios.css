@@ -47,7 +47,7 @@ a{
 .services_title{
     display: flex;
     justify-content: center;
-    background-image: url(./images/trees.jpg);
+    background-image: url(../images/trees.jpg);
 }
 .text{
     align-self: center;

@@ -44,7 +44,7 @@ a{
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    background-image: url(./images/view_plant.jpg);
+    background-image: url(../images/view_plant.jpg);
     background-position-y: -150px;
     background-position-x: -50px ;
 }
@@ -184,7 +184,6 @@ a{
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        background-image: url(./images/view_plant.jpg);
         background-position: center;
     }
     .text{

@@ -50,7 +50,7 @@ a{
     grid-template-rows: 1fr;
 }
 .formulario{
-    background-image: url(./images/green-leaf2.jpg);
+    background-image: url(../images/green-leaf2.jpg);
     background-position: top;
     display: grid;
     align-content: center;
