@@ -191,6 +191,11 @@ a{
         align-self: center;
         justify-self: center;
     } 
+    .history_years_items{
+        -webkit-animation: none;
+        -moz-animation: none;
+        animation: none;
+    }
     .animated {
         animation-fill-mode: both;
         animation-duration: 1.5s;
