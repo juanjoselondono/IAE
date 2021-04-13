@@ -4,7 +4,7 @@ html{
 }
 body {
     width: 100%;
-    grid-template-rows: 0.5fr 2.8fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 2.8fr 4fr 2fr;
     grid-template-columns: 1fr;
     margin: 0px 0px 0px 0px;
     font-family: 'Nunito', sans-serif;
@@ -16,6 +16,9 @@ a{
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+p{
+    color: white;
 }
 .menu_container {
     display: flex;
@@ -61,6 +64,7 @@ a{
 .formulario_title{
     justify-self: center;
     align-self: center;
+    color: white;
 }
 .formulario_item {
     align-self: center;
@@ -117,13 +121,6 @@ a{
     font-size: large;
 }
 /*Footer*/
-.footer_container{
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 .footer_link{
     text-decoration: none;
     color: white;

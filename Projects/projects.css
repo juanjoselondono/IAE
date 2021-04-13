@@ -7,7 +7,7 @@ body{
     margin: 0px 0px 0px;
     font-family: 'Nunito', sans-serif;
     display: grid;
-    grid-template-rows: 0.5fr 1fr 6fr 0.25fr;
+    grid-template-rows: auto 2fr 6fr 0.25fr;
     grid-template-columns: 1fr;
     grid-row-gap: 1fr;
 }
@@ -15,32 +15,6 @@ body{
 a{
     text-decoration: none;
     color: white;
-    cursor: pointer;
-}
-.menu_container {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color: white;
-}
-.menu_img{
-    width: 50px;
-    height: auto;
-    align-self: center;
-}
-.menu_title{
-    align-self: center;
-    font-style: italic;
-}
-.menu_items_container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-}
-.menu_items:hover{
-    border: solid white 1px;
-    border-radius: 10px;
     cursor: pointer;
 }
 /*presentation*/
@@ -53,7 +27,7 @@ a{
 }
 .projects_presentation div {
     color: white;
-    font-size: 50px;
+    font-size: 2em;
     font-weight: bolder;
     align-self: center;
     display:inline-block;
@@ -73,7 +47,7 @@ animation: reveal 7s infinite;
 }
 
 .projects_presentation div:last-of-type span {
-margin-left:-355px;
+margin-left:-100%;
 animation: slidein 7s infinite;
 }
 
@@ -85,8 +59,8 @@ animation: slidein 7s infinite;
 }
 
 @keyframes slidein {
-0% { margin-left:-400px; }
-20% { margin-left:-400px; }
+0% { margin-left:50vh; }
+20% { margin-left:50vh; }
 35% { margin-left:0px; }
 100% { margin-left:0px; }
 }
@@ -94,37 +68,36 @@ animation: slidein 7s infinite;
 @keyframes reveal {
 0% {opacity:0;width:0px;}
 20% {opacity:1;width:0px;}
-30% {width:500px;}
+30% {width:80vh;}
 80% {opacity:1;}
-100% {opacity:0;width:600px;}
+100% {opacity:0;width:100vh;}
 }
 
 /* Slideshow container */
 .projects_carousel_container{
+    margin-top: 10%;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr;
-    margin-bottom: 10%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-.projects_carousel_item{
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows:1fr 2fr;
-}
-.projects_carousel_item_image{
-    align-self: center;
+.projects_carousel_container div{
     justify-self: center;
-    width: 60%;
-    height: 100%;
-}
-.projects_carousel_item_image:hover{
-    opacity: 0.7;
-}
-.projects_carousel_item_title{
     align-self: center;
+}
+.card{
+    width: 80%;
+    margin-bottom: 5%;
+}
+.card-img-top{
+    width: 100vh;
+    height: 50vh;
+    object-fit: cover;
+}
+.nav-link:hover{
+    text-decoration: dashed;
+}
+.navbar-toggler{
     justify-self: center;
-    text-align: center;
-    font-size: 50px;
 }
 /*footer*/
 .footer_container{
@@ -142,21 +115,7 @@ animation: slidein 7s infinite;
 @media only screen and (max-width: 600px) {
     /*Body*/
     body{
-        grid-template-rows: 0.5fr 9fr 0.5fr;
-    }
-    /*Header*/
-    .menu_title{
-        align-self: center;
-        font-style: normal;
-        text-align: center;
-    }
-    .menu_items_container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        font-size: 0.8em;
-        list-style: none;
-        padding-left: 0px;
+        grid-template-rows: 0.5fr 4fr 0.5fr;
     }
     /*Section*/
     .section_container{
@@ -180,22 +139,9 @@ animation: slidein 7s infinite;
         display: none;
     }
     /*items*/
-    .projects_carousel_item{
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: 1fr;
-        outline: black 2px;
-    }
-    .projects_carousel_item_title{
-        align-self: center;
-        justify-self: center;
-        font-size: 25px;
-    }
-    .projects_carousel_item_image{
-        align-self: center;
-        justify-self: center;
-        width: 100%;
-        height: 80%;
+    .projects_carousel_container{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     /*Footer*/
     .footer_container{
