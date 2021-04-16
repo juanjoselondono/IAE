@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-darker" style="background-color: black;">
             <a class="navbar-brand" style="margin-right: 10%;margin-left: 10%;" href="../index.html">
                 <div class="row justify-content-center">
-                    <img src="../images/Logo4.png" width="60" height="60" class="d-inline-block align-top" alt="Logo">
+                    <img src="../images/Logo4.png" width="60" height="60" class="d-inline-block align-top" itemprop="logo" alt="Logo">
                 </div>
                 <div class="row justify-content-center">
                     <h1 style="text-align: center;font-size: 1.5em;">Ingeniería Ambiental <br> Especializada</h1>
@@ -55,16 +55,37 @@
     </header>
     <section class="section_container"  data-aos="fade-up">
         <div class="section1_slider">
-            <img class="section1_slider_myslides" itemprop="image" src="./images/tanque_verdes_azules.jpeg" alt="image plant">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block" src="./images/planta_verde.jpeg" alt="Planta de Tratemiento agua residuales">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block" src="./images/tanque_grande_ingeniero.jpeg" alt="Planta con ingenieros">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block" src="./images/tanque_verdes_azules.jpeg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </div>
+            <!-- <img class="section1_slider_myslides" itemprop="image" src="./images/tanque_verdes_azules.jpeg" alt="image plant">
             <img class="section1_slider_myslides" src="./images/tanque_grande_ingeniero.jpeg" alt="image engineer on the plant">
-            <img class="section1_slider_myslides" src="./images/planta_verde.jpeg" alt="Llanogrande plant">
+            <img class="section1_slider_myslides" src="./images/planta_verde.jpeg" alt="Llanogrande plant"> -->
         </div>
         <p class ="section_text">Ingeniería Ambiental es una empresa de Colombia con sede en Bello - Antioquia; Especializada en el <strong>diseño y construcción de sistemas de tratamiento de aguas residuables y agua potable, trámites ambientales, autorización de permisos ambientales, planes de manejo ambiental, estudios hidrológicos y planes parciales</strong>. Con más de 20 años de experiencia, Siempre hemos estado comprometidos con el medio ambiente y los resultados de alta calidad.</p>
     </section>
     <section class ="section_work_subjects" >
         <h2 class="section_work_subjects_title" style="margin-bottom: 5%;">Áreas de trabajo</h2>
         <div  class="card-container">
-            <div class="card mb-3" data-aos="fade-right">
+            <div class="card mb-3">
                 <img class="card-img-top" src="./images/plantas3.jpeg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Control de residuos</h5>
@@ -90,12 +111,34 @@
               </div>
         </div>
     </section>
-    <section class="impression-text" data-aos="zoom-in">
+    <section class="impression-text">
         <span>
             <h4 style="justify-self: center;" class="impression-text-white">CONSERVAMOS</h4><h3 class="impression-text-green">EL MEDIO AMBIENTE</h3>
         </span>
     </section>
-    <section class="section2_container" data-aos="zoom-in">
+    <section class="sosba-system">
+        <div class="sosba-system-text">
+            <div>
+                <p style="justify-self: center;font-size: 2em;">Conoce nuestro</p>
+                <h3 class="impression-text-green">
+                    Sistema SOSBA <br>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-layers-fill" viewBox="0 0 16 16" alt="layer-icon">
+                        <path d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4z"/>
+                        <path d="m2.125 8.567-1.86.992a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882l-1.86-.992-5.17 2.756a1.5 1.5 0 0 1-1.41 0l-5.17-2.756z"/>
+                    </svg>
+                </h3>
+            </div>
+            <p style="margin: 0% 15% 0% 15%;text-align: left;">
+                El Sistema de Oxidación en Suelo Biológico Activo “SOSBA”, es un método de tratamiento que ha aplicado el poder físico de la tierra y ha utilizado la capacidad de descomposición que tienen los microorganismos terrestres en el tratamiento de aguas residuales, este sistema nos permite utilizar el efluente en el riego de zonas verdes o en agricultura ya que el sistema elimina el nitrógeno, el fósforo, las bacterias patógenas y no genera riesgo alguno para salud, proporcionándonos un sistema de tratamiento de alta calidad y tecnología que se puede utilizar como área de recreación pública.
+            </p>
+            <p class="sosba-system-cta">¡Hacemos parte del paisaje!</p>
+            <a href="./Contacto/contacto.html"><button type="button" class="btn btn-success">cotizar</button></a>
+        </div>
+        <div class="soba-system-image" style="align-content: center;display: grid;">
+            <img class="sosba-system-img" src="https://images.pexels.com/photos/732548/pexels-photo-732548.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="sosba-image">
+        </div>
+    </section>
+    <section class="section2_container">
         <div class="section2_container_vision">
             <h3 class="section2_container_title">Misión</h3>
             <img class = "section2_container_image"src="./images/icons/plantIcon.png" alt="platicon"> 
@@ -128,7 +171,7 @@
                     </a>
                 </div>
                 <div class="col-sm">
-                    <a href="https://wa.me/+573164825745?text=Buenos días quiero hacer una cotización" style="color:rgb(105, 255, 105);">
+                    <a itemprop="telephone" href="https://wa.me/+573164825745?text=Buenos días quiero hacer una cotización" style="color:rgb(105, 255, 105);">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                             <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
                         </svg>
@@ -146,14 +189,13 @@
             Copyright IAE © 2021. All rights reserved.
         </div>
     </footer>
-
-    <script src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 
 </html>
