@@ -4,13 +4,17 @@ html{
 }
 body {
     width: 100%;
-    grid-template-rows: 0.5fr 2.8fr 4fr 2fr;
+    grid-template-rows:auto 3fr 2.8fr 4fr auto;
     grid-template-columns: 1fr;
     margin: 0px 0px 0px 0px;
     font-family: 'Nunito', sans-serif;
     color: white;
 }
-
+.title{
+    padding-bottom: 10%;
+    padding-top: 10%;
+    background-image: url('../images/water_wallpaper.jpg');
+}
 /*Menu*/
 a{
     text-decoration: none;
@@ -53,7 +57,8 @@ p{
     grid-template-rows: 1fr;
 }
 .formulario{
-    background-image: url(../images/green-leaf2.jpg);
+    padding-top: 10%;
+    background-color: black;
     background-position: top;
     display: grid;
     align-content: center;
