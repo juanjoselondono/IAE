@@ -11,16 +11,18 @@ body{
     grid-template-columns: 1fr;
     grid-row-gap: 1fr;
 }
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1fr;
+}
 .card{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    border: none !important;
+    margin: 10%;
 }
 .card-img-top{
     object-fit: cover;
     width: 10vh;
-    height: 50vh;
+    height: 30vh;
     background-position: center;
 }
 /*Phone*/
@@ -40,5 +42,8 @@ body{
         width: 10vh;
         height: 40vh;
         background-position: center;
+    }
+    .container{
+        grid-template-columns: 1fr;
     }
 }
